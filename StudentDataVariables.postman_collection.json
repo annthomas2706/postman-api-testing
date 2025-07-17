@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "d6fae24d-258c-4325-95ab-c2510467377a",
+		"name": "StudentDataVariables",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43582868",
+		"_collection_link": "https://annthomas-8276241.postman.co/workspace/Ann-Thomas's-Workspace~0135e83f-b1d8-4703-8571-3370dbbbb27f/collection/43582868-d6fae24d-258c-4325-95ab-c2510467377a?action=share&source=collection_link&creator=43582868"
+	},
+	"item": [
+		{
+			"name": "GetRequestFolder",
+			"item": [
+				{
+					"name": "GetSingleStudent",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is present\", () => {\r",
+									"  pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type header is application/json\", () => {\r",
+									"  pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 500ms\", () => {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(500);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"const jsonData = pm.response.json();//copy reponse to jsonData from pm library\r",
+									"pm.test(\"Test data type of the response\", () => {\r",
+									"  pm.expect(jsonData).to.be.an(\"object\");\r",
+									"  pm.expect(jsonData.id).to.be.an(\"string\");\r",
+									"  pm.expect(jsonData.name).to.be.a(\"string\");\r",
+									"  pm.expect(jsonData.email).to.be.a(\"string\");\r",
+									"  pm.expect(jsonData.age).to.be.a(\"number\");\r",
+									"  pm.expect(jsonData.course).to.be.a(\"string\");\r",
+									"  \r",
+									"});\r",
+									"\r",
+									"//validating value of fields\r",
+									"pm.test(\"Test 1\", () => {\r",
+									"  const jsonData = pm.response.json();\r",
+									"  pm.expect(jsonData.id).to.eql(\"1\");\r",
+									"  pm.expect(jsonData.name).to.eql(\"Alice Johnson\");\r",
+									"  pm.expect(jsonData.email).to.eql(\"alice.johnson@example.com\");\r",
+									"  pm.expect(jsonData.age).to.eql(22);\r",
+									"  pm.expect(jsonData.course).to.eql(\"Computer Science\");\r",
+									"});\r",
+									"//to get global variable before removing\r",
+									"console.log(pm.globals.get(\"studentId\"));\r",
+									"\r",
+									"//to get env variable before removing\r",
+									"console.log(pm.environment.get(\"studentId_qa_env\"));\r",
+									"\r",
+									"//to get colllection variable before removing\r",
+									"console.log(pm.collectionVariables.get(\"studentId_collect\"));\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"//unset global variable\r",
+									"pm.globals.unset(\"studentId\");\r",
+									"\r",
+									"//unset env variable\r",
+									"pm.environment.unset(\"studentId_qa_env\");\r",
+									"\r",
+									"//unset collection variable\r",
+									"pm.collectionVariables.unset(\"studentId_collect\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//local\r",
+									"pm.variables.set(\"url_local\",\"http://localhost:3000\");\r",
+									"\r",
+									"//global variable\r",
+									"\r",
+									"pm.globals.set(\"studentId\",\"1\");\r",
+									"\r",
+									"//env variable(It is craeted inside qa env,so accessible only on qa)\r",
+									"pm.environment.set(\"studentId_qa_env\",\"1\");\r",
+									"\r",
+									"//collection variable\r",
+									"pm.collectionVariables.set(\"studentId_collect\",\"3\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_local}}/students/{{studentId}}",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"students",
+								"{{studentId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GetAllStudentData",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_collect}}/students",
+					"host": [
+						"{{url_collect}}"
+					],
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"David Miller\",\r\n  \"email\": \"david.miller@example.com\",\r\n  \"age\": 24,\r\n  \"course\": \"Artificial Intelligence\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_collect}}/students",
+					"host": [
+						"{{url_collect}}"
+					],
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateStudent",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Clara Thomas\",\r\n        \"email\": \"clara.thomas@example.com\",\r\n        \"age\": 22,\r\n        \"course\": \"Data Engineering\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_global}}/students/{{studentId_collect}}",
+					"host": [
+						"{{url_global}}"
+					],
+					"path": [
+						"students",
+						"{{studentId_collect}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url_collect",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}

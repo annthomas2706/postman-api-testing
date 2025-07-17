@@ -1,0 +1,81 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "age": 22,
+      "course": "Computer Science"
+    },
+    {
+      "id": "2",
+      "name": "Bob Smith",
+      "email": "bob.smith@example.com",
+      "age": 23,
+      "course": "Mechanical Engineering"
+    },
+    {
+      "name": "Clara Thomas",
+      "email": "clara.thomas@example.com",
+      "age": 22,
+      "course": "Data Engineering",
+      "id": "3"
+    },
+    {
+      "id": "bd9c",
+      "name": "David Miller",
+      "email": "david.miller@example.com",
+      "age": 24,
+      "course": "Artificial Intelligence"
+    },
+    {
+      "id": "e6cf",
+      "name": "David Miller",
+      "email": "david.miller@example.com",
+      "age": 24,
+      "course": "Artificial Intelligence"
+    },
+    {
+      "id": "a3bc",
+      "name": "David Miller",
+      "email": "david.miller@example.com",
+      "age": 24,
+      "course": "Artificial Intelligence"
+    },
+    {
+      "id": "75eb",
+      "name": "David Miller",
+      "email": "david.miller@example.com",
+      "age": 24,
+      "course": "Artificial Intelligence"
+    },
+    {
+      "id": "b526",
+      "name": "David Miller",
+      "email": "david.miller@example.com",
+      "age": 24,
+      "course": "Artificial Intelligence"
+    },
+    {
+      "id": "364a",
+      "name": "David Miller",
+      "email": "david.miller@example.com",
+      "age": 24,
+      "course": "Artificial Intelligence"
+    },
+    {
+      "id": "a0f9",
+      "name": "Ann Miller",
+      "email": "ann.miller@example.com",
+      "age": 27,
+      "course": "Artificial Intelligence"
+    },
+    {
+      "id": "3705",
+      "name": "Ann Miller",
+      "email": "ann.miller@example.com",
+      "age": 27,
+      "course": "Artificial Intelligence"
+    }
+  ]
+}
