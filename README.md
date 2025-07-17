@@ -48,7 +48,7 @@ Run the requests step-by-step or use Collection Runner to execute the full flow.
 
 
 
-
+*************************************************SECOND API****************************************************************************************
 
 
 ****Student Data API – Postman Collection with Variable Management****
@@ -103,7 +103,7 @@ Then, your requests use:
 **How to create api and collection**
 
 Run json-server with your data file:
-json-server --watch StudentData.json
+json-server StudentData.json
 
 Import the following into Postman:
 
