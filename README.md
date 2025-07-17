@@ -46,3 +46,70 @@ Ensure all requests inherit auth from the parent.
 
 Run the requests step-by-step or use Collection Runner to execute the full flow.
 
+
+
+
+**Student Data API – Postman Collection with Variable Management**
+This Postman project demonstrates testing a custom API built using JSON Server. The API simulates student data operations and explores the usage of different variable scopes in Postman: environment, collection, local, and global.
+
+It covers the complete CRUD operations – Create, Read, Update, and Delete – on student records using data defined in **StudentData.json.**
+
+A custom Student Data API created using json-server via command line.
+
+**A Postman collection (StudentDataVariables.postman_collection.json) to test the API**.
+
+Demonstrates use of local, environment, collection, and global variables.
+
+Proper unset of variables done in the post-request script to maintain clean state.
+
+****🔄 Request Flow**
+**Create Student (POST)**
+Generates student data and sends a POST request to {{url_collect}}/students
+
+Captures the student id from the response using:
+
+const jsonData = pm.response.json();
+pm.environment.set("studentId", jsonData.id);
+Stores it in an environment variable for chaining
+
+**2. Get Student by ID (GET)**
+Uses {{studentId}} in the request to fetch student details
+
+Verifies the student is created successfully
+
+**3. Update Student (PUT or PATCH)**
+Updates the created student using the {{studentId}}
+
+Sends new data and confirms the update via response checks
+
+**4. Delete Student (DELETE)**
+Deletes the student using {{studentId}}
+
+Cleans up by unsetting variables in the Post-request script:
+pm.environment.unset("studentId");
+
+**🌐 Setting the Base URL**
+The API base URL is saved in an environment variable named url_global,url_local,url_collect.
+
+For example:
+baseUrl = http://localhost:3000
+Then, your requests use:
+{{url_global}}/students
+
+
+
+**How to create api and collection**
+
+Run json-server with your data file:
+json-server --watch StudentData.json
+
+Import the following into Postman:
+
+The StudentDataVariables.postman_collection.json collection
+
+An environment with baseUrl set as http://localhost:3000
+
+Run each request in sequence or automate using the Collection Runner
+
+
+
