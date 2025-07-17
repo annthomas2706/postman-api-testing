@@ -47,8 +47,7 @@ Ensure all requests inherit auth from the parent.
 Run the requests step-by-step or use Collection Runner to execute the full flow.
 
 
-
-*************************************************SECOND API****************************************************************************************
+*************************************************************************SECOND API************************************************************************
 
 
 ****Student Data API – Postman Collection with Variable Management****
