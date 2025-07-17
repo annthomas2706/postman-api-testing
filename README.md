@@ -49,7 +49,9 @@ Run the requests step-by-step or use Collection Runner to execute the full flow.
 
 
 
-**Student Data API – Postman Collection with Variable Management**
+
+
+****Student Data API – Postman Collection with Variable Management****
 This Postman project demonstrates testing a custom API built using JSON Server. The API simulates student data operations and explores the usage of different variable scopes in Postman: environment, collection, local, and global.
 
 It covers the complete CRUD operations – Create, Read, Update, and Delete – on student records using data defined in **StudentData.json.**
