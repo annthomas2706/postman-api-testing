@@ -3,7 +3,7 @@ This Postman project demonstrates API chaining using the public GoREST API, wher
 
 ➡️ Create → Get → Update → Delete
 
-*📌 Features*
+*📌 Features*--
 Dynamically generates a random username and email for each user.
 
 Captures and stores the user ID from the create response to reuse in subsequent requests.
