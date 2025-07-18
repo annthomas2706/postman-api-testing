@@ -111,9 +111,9 @@ baseUrl = http://localhost:3000
 <br>
 Then, your requests use:
 {{url_global}}/students
-
+<br>
+<br>
 **How to create api and collection**
-
 <br>
 1.Run json-server with your data file:
 json-server StudentData.json
