@@ -1,4 +1,6 @@
-#**<u>GoREST API Chaining – Postman Collection(GoRest_ApiChaining.postman_collection.json)</u>**<br>
+#GoREST API Chaining – Postman Collection(GoRest_ApiChaining.postman_collection.json)
+
+<br>
 
 
 This Postman project demonstrates API chaining using the public GoREST API, where data is passed between requests using Postman environment variables. It simulates a typical user lifecycle:
@@ -132,7 +134,7 @@ An environment with baseUrl set as http://localhost:3000
 
 This project demonstrates data-driven API testing using Postman, a CSV data file, and a mock REST API built with `json-server`. The focus is on creating posts with `title` and `author` fields using parameterization, and testing full CRUD operations.
 
-## 🚀 What This Project Does
+ 🚀**What This Project Does**
 
 - Sends multiple **POST** requests with different titles and authors from `posts_data.csv`
 - Uses `json-server` to simulate a REST API (`http://localhost:3000`)
