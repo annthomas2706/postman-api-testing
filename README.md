@@ -1,4 +1,4 @@
-**GoREST API Chaining – Postman Collection**(GoRest_ApiChaining.postman_collection.json)
+<u>**GoREST API Chaining – Postman Collection**(GoRest_ApiChaining.postman_collection.json)</u>
 This Postman project demonstrates API chaining using the public GoREST API, where data is passed between requests using Postman environment variables. It simulates a typical user lifecycle:
 
 ➡️ Create → Get → Update → Delete
