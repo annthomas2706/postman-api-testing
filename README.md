@@ -115,19 +115,18 @@ Then, your requests use:
 
 
 **How to create api and collection**
-<br>
 
 <br>
-Run json-server with your data file:
+1.Run json-server with your data file:
 json-server StudentData.json
 
-Import the following into Postman:
+2.Import the following into Postman:
 
 The StudentDataVariables.postman_collection.json collection
 
 An environment with baseUrl set as http://localhost:3000
 
-Run each request in sequence or automate using the Collection Runner
+3.Run each request in sequence or automate using the Collection Runner
 
 
 <br>**API Testing with Postman+CSV+json-server**
