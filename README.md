@@ -103,7 +103,8 @@ pm.environment.unset("studentId");
 <br>
 
 
-**SETTING THE BASE URL**
+**Setting the base Url**
+<br>
 The API base URL is saved in an environment variable named url_global,url_local,url_collect.
 <br>
 For example:
