@@ -140,7 +140,7 @@ This project demonstrates data-driven API testing using Postman, a CSV data file
   
 <br>
 
-**Example API Request**
+*Example API Request*
 POST **http://localhost:3000/posts**
 
 Request Body (in Postman):
@@ -149,7 +149,8 @@ Request Body (in Postman):
   "title": "{{title}}",
   "author": "{{author}}"
 }
-Sample Response:
+<br>
+*Sample Response:*
 
 {
   "title": "Test Title 1",
