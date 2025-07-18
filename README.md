@@ -114,3 +114,50 @@ Run each request in sequence or automate using the Collection Runner
 
 
 
+********************************************************📘 API Testing with Postman + CSV + json-server********************************************************
+
+This project demonstrates data-driven API testing using Postman, a CSV data file, and a mock REST API built with `json-server`. The focus is on creating posts with `title` and `author` fields using parameterization, and testing full CRUD operations.
+
+---
+
+File:Post_data.csv(Attached)
+
+---
+
+## 🚀 What This Project Does
+
+- Sends multiple **POST** requests with different titles and authors from `posts_data.csv`
+- Uses `json-server` to simulate a REST API (`http://localhost:3000`)
+- Validates `GET`, `PUT`, and `DELETE` requests for created posts
+  
+
+
+**Example API Request**
+POST **http://localhost:3000/posts**
+
+Request Body (in Postman):
+
+{
+  "title": "{{title}}",
+  "author": "{{author}}"
+}
+Sample Response:
+
+{
+  "title": "Test Title 1",
+  "author": "Ann",
+  "id": 1
+}
+**How to Run**
+**1. Start the Mock API Server**
+npm install -g json-server
+json-server posts_data.csv
+**2. Run Collection**
+Make sure Postman variables ({{title}}, {{author}}) match the column names in your CSV file.
+
+**🧩 Tested Endpoints**
+Method	Endpoint	Purpose
+POST	/posts	Create new posts
+GET	/posts/:id	Retrieve specific post
+PUT	/posts/:id	Update a post
+DELETE	/posts/:id	Delete a post
