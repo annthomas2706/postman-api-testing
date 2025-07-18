@@ -102,8 +102,8 @@ Cleans up by unsetting variables in the Post-request script:
 pm.environment.unset("studentId");
 <br>
 
-<br>
-*Setting the Base URL*<br><br>
+
+**SETTING THE BASE URL**
 The API base URL is saved in an environment variable named url_global,url_local,url_collect.
 <br>
 For example:
