@@ -47,7 +47,8 @@ Ensure all requests inherit auth from the parent.
 Run the requests step-by-step or use Collection Runner to execute the full flow.
 
 
-*************************************************************************SECOND API************************************************************************
+
+
 
 
 ****Student Data API – Postman Collection with Variable Management****
@@ -117,12 +118,6 @@ Run each request in sequence or automate using the Collection Runner
 ********************************************************📘 API Testing with Postman + CSV + json-server********************************************************
 
 This project demonstrates data-driven API testing using Postman, a CSV data file, and a mock REST API built with `json-server`. The focus is on creating posts with `title` and `author` fields using parameterization, and testing full CRUD operations.
-
----
-
-File:Post_data.csv(Attached)
-
----
 
 ## 🚀 What This Project Does
 
