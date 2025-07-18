@@ -116,7 +116,7 @@ Then, your requests use:
 {{url_global}}/students
 <br>
 <br>
-**How to create api and collection**
+*How to create api and collection*
 <br>
 1.Run json-server with your data file:
 json-server StudentData.json
@@ -130,7 +130,7 @@ An environment with baseUrl set as http://localhost:3000
 3.Run each request in sequence or automate using the Collection Runner
 
 
- # API Testing with Postman+CSV+json-server
+ # API Testing with Postman For Data Parametrization
 <br>
 
 This project demonstrates data-driven API testing using Postman, a CSV data file, and a mock REST API built with `json-server`. The focus is on creating posts with `title` and `author` fields using parameterization, and testing full CRUD operations.
