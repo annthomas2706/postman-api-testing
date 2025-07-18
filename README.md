@@ -36,13 +36,15 @@ Deletes the user by referencing {{id}}.
 
 Post-request script unsets the environment variables to clean up.
 
-**🧪 Environment Variables Used**
+**🧪 Environment Variables Used**<br>
+
 Variable	Description
 username	Randomly generated user name
 useremail	Randomly generated user email
 id	ID of the created user from response
 
-**⚙️ How to Use**
+**⚙️ How to Use**<br>
+
 Import the Postman collection and the environment file (.postman_environment.json) into Postman.
 
 Set your GoREST API token in the collection-level Authorization tab (Bearer Token).
@@ -56,12 +58,15 @@ Run the requests step-by-step or use Collection Runner to execute the full flow.
 
 
 
-****Student Data API – Postman Collection with Variable Management****
+****Student Data API – Postman Collection with Variable Management****<br>
+
 This Postman project demonstrates testing a custom API built using JSON Server. The API simulates student data operations and explores the usage of different variable scopes in Postman: environment, collection, local, and global.
 
-It covers the complete CRUD operations – Create, Read, Update, and Delete – on student records using data defined in **StudentData.json.**
+It covers the complete CRUD operations – Create, Read, Update, and Delete – on student records using data defined in *StudentData.json.*
 
-A custom Student Data API created using json-server via command line.
+A custom Student Data API created using json-server via command line.<br>
+
+
 
 **A Postman collection (StudentDataVariables.postman_collection.json) to test the API**.
 
