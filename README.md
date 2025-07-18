@@ -1,4 +1,4 @@
-<u>GoREST API Chaining – Postman Collection**(GoRest_ApiChaining.postman_collection.json)</u>
+**<u>GoREST API Chaining – Postman Collection(GoRest_ApiChaining.postman_collection.json)</u>**
 This Postman project demonstrates API chaining using the public GoREST API, where data is passed between requests using Postman environment variables. It simulates a typical user lifecycle:
 
 ➡️ Create → Get → Update → Delete
@@ -16,20 +16,20 @@ Cleans up by deleting the created user and unsetting variables.
 
 
 
-**1️⃣ Create User (POST)**
+*1️⃣ Create User (POST)*
 Pre-request script generates a random username and useremail, then sets them as environment variables.
 
 Sends a POST request using those variables in the request body.
 
 On success, extracts the id from the response and stores it as an environment variable (id).
 
-**2️⃣ Get User by ID (GET)**
+*2️⃣ Get User by ID (GET)*
 Uses the stored {{id}} to fetch the created user's details.
 
-**3️⃣ Update User (PUT or PATCH)**
+*3️⃣ Update User (PUT or PATCH)*
 Updates the user details using the same {{id}}.
 
-**4️⃣ Delete User (DELETE)**
+*4️⃣ Delete User (DELETE)*
 Deletes the user by referencing {{id}}.
 
 Post-request script unsets the environment variables to clean up.
