@@ -58,7 +58,7 @@ Run the requests step-by-step or use Collection Runner to execute the full flow.
 
 
 
-****Student Data API – Postman Collection with Variable Management****<br>
+#****Student Data API – Postman Collection with Variable Management****<br>
 
 This Postman project demonstrates testing a custom API built using JSON Server. The API simulates student data operations and explores the usage of different variable scopes in Postman: environment, collection, local, and global.
 
@@ -68,7 +68,7 @@ A custom Student Data API created using json-server via command line.<br>
 
 
 
-**A Postman collection (StudentDataVariables.postman_collection.json) to test the API**.
+*A Postman collection (StudentDataVariables.postman_collection.json) to test the API*.
 
 Demonstrates use of local, environment, collection, and global variables.
 
@@ -128,7 +128,7 @@ An environment with baseUrl set as http://localhost:3000
 3.Run each request in sequence or automate using the Collection Runner
 
 
-<br>**API Testing with Postman+CSV+json-server**
+#<br>**API Testing with Postman+CSV+json-server**
 
 This project demonstrates data-driven API testing using Postman, a CSV data file, and a mock REST API built with `json-server`. The focus is on creating posts with `title` and `author` fields using parameterization, and testing full CRUD operations.
 
