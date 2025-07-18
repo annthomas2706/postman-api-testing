@@ -112,8 +112,6 @@ baseUrl = http://localhost:3000
 Then, your requests use:
 {{url_global}}/students
 
-
-
 **How to create api and collection**
 
 <br>
