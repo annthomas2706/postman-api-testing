@@ -13,6 +13,9 @@ Demonstrates API chaining using environment variables (username, useremail, id).
 Cleans up by deleting the created user and unsetting variables.
 
 **🔄 Request Flow**
+
+
+
 **1️⃣ Create User (POST)**
 Pre-request script generates a random username and useremail, then sets them as environment variables.
 
