@@ -103,7 +103,7 @@ pm.environment.unset("studentId");
 <br>
 
 <br>
-**🌐 Setting the Base URL**
+**🌐 Setting the Base URL**<br><br>
 The API base URL is saved in an environment variable named url_global,url_local,url_collect.
 <br>
 For example:
@@ -115,6 +115,8 @@ Then, your requests use:
 
 
 **How to create api and collection**
+<br>
+
 <br>
 Run json-server with your data file:
 json-server StudentData.json
