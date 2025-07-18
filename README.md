@@ -76,7 +76,7 @@ Proper unset of variables done in the post-request script to maintain clean stat
 
 **🔄 Request Flow**<br><br>
 
-*Create Student (POST)*
+*1. Create Student (POST)*
 Generates student data and sends a POST request to {{url_collect}}/students
 
 Captures the student id from the response using:
@@ -100,6 +100,8 @@ Deletes the student using {{studentId}}
 
 Cleans up by unsetting variables in the Post-request script:
 pm.environment.unset("studentId");
+<br>
+
 <br>
 **🌐 Setting the Base URL**
 The API base URL is saved in an environment variable named url_global,url_local,url_collect.
