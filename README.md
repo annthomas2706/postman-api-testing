@@ -58,6 +58,7 @@ Run the requests step-by-step or use Collection Runner to execute the full flow.
 
 <br>
 
+**Postman Api Docs:** https://documenter.getpostman.com/view/43582868/2sB34kDJq4
 
 
 # Student Data API – Postman Collection with Variable Management <br>
@@ -127,8 +128,8 @@ The StudentDataVariables.postman_collection.json collection
 
 An environment with baseUrl set as http://localhost:3000
 
-3.Run each request in sequence or automate using the Collection Runner
-
+3.Run each request in sequence or automate using the Collection Runner<br>
+**Postman api doc:** https://documenter.getpostman.com/view/43582868/2sB34kDJuN
 
  # API Testing with Postman For Data Parametrization
 <br>
@@ -181,3 +182,5 @@ POST	/posts	Create new posts
 GET	/posts/:id	Retrieve specific post
 PUT	/posts/:id	Update a post
 DELETE	/posts/:id	Delete a post
+
+**Postman API Doc**: https://documenter.getpostman.com/view/43582868/2sB34kDJq5
